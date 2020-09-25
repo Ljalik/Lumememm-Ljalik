@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lumememm.Snegovik">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout x:Name="snegovik"
+                         BackgroundColor="Green"
+                         Spacing="0">
+                <Frame x:Name="shlapa"
+                       BackgroundColor="Brown"
+                       BorderColor="Black"
+                       RotationX="90"
+                       Margin="140,0"
+                       Padding="45"/>
+                <Frame x:Name="golova"
+                       BackgroundColor="Black"
+                       CornerRadius="60"
+                       Margin="120,0"
+                       Padding="60"/>
+                <Frame x:Name="telo"
+                       BackgroundColor="Red"
+                       CornerRadius="80"
+                       Margin="100,0"
+                       Padding="80"/>
+                <Frame x:Name="nogi"
+                       BackgroundColor="Yellow"
+                       CornerRadius="200"
+                       Margin="75,0"
+                       Padding="90"/>
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="on"
+                            Text="Sisse"
+                            TextColor="Blue"
+                            BackgroundColor="Orange"
+                            HorizontalOptions="StartAndExpand"
+                            Clicked="on_Clicked"/>
+                    <Button x:Name="off"
+                            Text="Välja"
+                            TextColor="Aqua"
+                            BackgroundColor="DeepPink"
+                            HorizontalOptions="Center"
+                            Clicked="off_Clicked"/>
+                    <Button x:Name="random"
+                            Text="Flash"
+                            TextColor="Crimson"
+                            BackgroundColor="Aqua"
+                            HorizontalOptions="EndAndExpand"
+                            Clicked="random_Clicked"/>
+                    <Button x:Name="oma"
+                            BackgroundColor="Crimson"
+                            Text="Mein"
+                            TextColor="Orange"
+                            HorizontalOptions="EndAndExpand"
+                            Clicked="oma_Clicked"/>
+                    <StackLayout Orientation="Vertical"/>
+                    <Button x:Name="hi"
+                            BackgroundColor="Blue"
+                            Text="Hello"
+                            TextColor="DeepPink"
+                            Clicked="hi_Clicked_1"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
